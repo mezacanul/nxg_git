@@ -1,0 +1,27 @@
+.api-title-container:hover .api-title-span {
+    color: white !important;
+}
+
+.text-namecheap {
+    color: #FF8C44;
+}
+
+.text-twilio {
+    color: #F22F46;
+}
+
+.text-hostinger {
+    color: #674CC4;
+}
+
+.btn-copy:hover {
+    cursor: pointer;
+}
+
+.dt-container, .dt-layout-row:first-child, .dt-layout-table, .dt-layout-table .dt-layout-cell, .dt-layout-table .dt-layout-cell table {
+    width: max-content;
+}
+
+.w-max-content {
+    width: max-content;
+}
