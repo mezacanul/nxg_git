@@ -1,7 +1,7 @@
 <?php 
 
 $servername = "localhost";
-$DBname = "NXG_app";
+$DBname = "nxg_git";
 $DBusername = "root";
 $DBpassword = "";
 
