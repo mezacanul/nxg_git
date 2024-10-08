@@ -10,7 +10,7 @@ function validateNamecheapAccount() {
     $(".no-namecheap-account-info").addClass("d-none")
     $(".nc_check_warnings .status-loading").removeClass("d-none")
     
-    $.post("https://eduardomeza.com/demos/namecheap_api/buy_domain.php", send).then((data)=>{
+    $.post("../../../demos/namecheap_api/buy_domain.php", send).then((data)=>{
         $(".nc_check_warnings .status-loading").addClass("d-none")
 
         try {
@@ -108,7 +108,7 @@ function namecheap_search_domain(){
     GUI_controlAll(0, "#signer_details")
     GUI_controlAll(0, "#new_domain_actions")
     
-    $.post("https://eduardomeza.com/demos/namecheap_api/buy_domain.php", send).then((data)=>{
+    $.post("../../../demos/namecheap_api/buy_domain.php", send).then((data)=>{
         try {
             console.log(data);
             response = JSON.parse(data)
@@ -158,7 +158,7 @@ function twilio_get_new_phone(){
     $(".twilio_available_warning .phone-available-notice").addClass("d-none")
     $(".twilio_available_warning .status-loading").removeClass("d-none")
 
-    $.post("https://eduardomeza.com/demos/namecheap_api/buy_domain.php", send).then((data)=>{
+    $.post("../../../demos/namecheap_api/buy_domain.php", send).then((data)=>{
         try {
             var response = JSON.parse(data)
             if(response.status == "ok"){
@@ -215,7 +215,7 @@ function twilio_register(){
     $(".twilio_register_warning .status-success").addClass("d-none")
     $(".twilio_register_warning .status-loading").removeClass("d-none")
 
-    $.post("https://eduardomeza.com/demos/namecheap_api/buy_domain.php", send).then((data)=>{
+    $.post("../../../demos/namecheap_api/buy_domain.php", send).then((data)=>{
         console.log(data);
         // GUI_controlAll(1, "#signer_details")
         // GUI_controlAll(1, "#new_domain_actions")
@@ -264,7 +264,7 @@ function namecheap_register() {
     GUI_controlAll(0, "#namecheap_register")
     $(".nc_register_warnings .status-loading").removeClass("d-none")
     
-    $.post("https://eduardomeza.com/demos/namecheap_api/buy_domain.php", send).then((data)=>{
+    $.post("../../../demos/namecheap_api/buy_domain.php", send).then((data)=>{
         try {
             var response = JSON.parse(data)
             console.log(response);
