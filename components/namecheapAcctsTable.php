@@ -18,10 +18,11 @@
             <thead>
                 <tr>
                     <th>Account</th>
-                    <th>Password</th>
+                    <!-- <th>Password</th> -->
                     <th>Signer</th>
-                    <th>API Key</th>
-                    <th>API Registered IP</th>
+                    <th>Created</th>
+                    <!-- <th>API Key</th> -->
+                    <!-- <th>API Registered IP</th> -->
     
                     <th class="text-center">Actions</th>
                 </tr>
@@ -33,21 +34,25 @@
                             <?php echo $na["user"] ?>
                         </td>
     
-                        <td class='col-1'>
+                        <!-- <td class='col-1'>
                             <?php echo $na["password"] ?>
-                        </td>
+                        </td> -->
     
                         <td class='col-1'>
                             <?php echo $na["signerName"] ?>
                         </td>
-    
+
                         <td class='col-1'>
+                            <?php echo $na["created"] ?>
+                        </td>
+    
+                        <!-- <td class='col-1'>
                             <?php echo $na["api_key"] ?>
-                        </td>
+                        </td> -->
     
-                        <td class='col-1'>
+                        <!-- <td class='col-1'>
                             <?php echo $na["api_ip"] ?>
-                        </td>
+                        </td> -->
     
                         <td class="col d-flex justify-content-center">
                             <!-- <a class='btn btn-primary me-3' href='namecheap_acct.php?id=<?php echo $na['id'] ?>'>Edit</a>

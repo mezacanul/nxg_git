@@ -15,7 +15,8 @@
         <thead>
             <tr>
                 <th>Account</th>
-                <th>Password</th>
+                <th>Created</th>
+                <!-- <th>Password</th> -->
 
                 <th class="text-end">Actions</th>
             </tr>
@@ -28,8 +29,12 @@
                     </td>
 
                     <td class='col-1'>
-                        <?php echo $ha["password"] ?>
+                        <?php echo $ha["added"] ?>
                     </td>
+
+                    <!-- <td class='col-1'>
+                        <?php echo $ha["password"] ?>
+                    </td> -->
 
                     <td class="d-flex justify-content-end">
                         <a class='btn btn-primary me-3' href='hostinger_acct.php?id=<?php echo $ha['id'] ?>'>Edit</a>
